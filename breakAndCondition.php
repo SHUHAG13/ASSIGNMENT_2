@@ -1,0 +1,14 @@
+<?php
+$first=0;
+$second=1;
+$_fibo=$first+$second;
+echo"$first\n$second\n";
+$n=10;
+for($i=2;$i<$n;$i++)
+{
+    $_fibo=$first+$second;
+    echo$_fibo."\n";
+    $first=$second;
+    $second=$_fibo;
+    if($_fibo==100)break;
+}
